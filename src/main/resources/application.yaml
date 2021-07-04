@@ -1,0 +1,20 @@
+
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/NBP
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+app:
+  data:
+    env:
+      url: http://api.nbp.pl
+      path: /api/cenyzlota/
